@@ -46,9 +46,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ComputerShop\interfaces\iCompterFactory.cs" />
-    <Compile Include="ComputerShop\interfaces\IComputer.cs" />
-    <Compile Include="ComputerShop\interfaces\IRAM.cs" />
+    <Compile Include="interfaces\iComputerFactory.cs" />
+    <Compile Include="interfaces\IComputer.cs" />
+    <Compile Include="interfaces\IRAM.cs" />
     <Compile Include="ComputerShop\Storage\mSATA.cs" />
     <Compile Include="ComputerShop\Storage\SATA.cs" />
     <Compile Include="ComputerShop\RAM\DIMM.cs" />
@@ -64,6 +64,7 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="interfaces\IStorage.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">

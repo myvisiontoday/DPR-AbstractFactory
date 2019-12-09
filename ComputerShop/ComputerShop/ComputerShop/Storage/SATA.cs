@@ -6,7 +6,17 @@ using System.Threading.Tasks;
 
 namespace ComputerShop
 {
-    class Class1
+    public class SATA : IStorage
     {
+        private int capacity = 2; // default value
+        public string getDescription()
+        {
+            return "* " + this.capacity + "TB Hard Drive NVMe SATA";
+        }
+
+        public void setCapactiy(int capacity)
+        {
+            this.capacity = capacity;
+        }
     }
 }

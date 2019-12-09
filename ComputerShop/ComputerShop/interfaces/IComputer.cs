@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ComputerShop.ComputerShop
+namespace ComputerShop
 {
-    interface IRAM
+    public interface IComputer
     {
+        string getDescription();
     }
 }

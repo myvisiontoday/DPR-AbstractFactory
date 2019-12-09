@@ -6,7 +6,13 @@ using System.Threading.Tasks;
 
 namespace ComputerShop
 {
-    class ComputerShop
+    public class Laptop : IComputer
     {
+        public string getDescription()
+        {
+            return "New XPS Dell Laptop\n" +
+                        "* 10th Generation Intel® Core™ i7-8565U Processor \n" +
+                        "* Windows 10 Home";
+        }
     }
 }

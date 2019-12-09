@@ -6,7 +6,21 @@ using System.Threading.Tasks;
 
 namespace ComputerShop
 {
-    class Class1
+    class LaptopFactory : iComputerFactory
     {
+        public IComputer CreateComputer()
+        {
+            return new Laptop();
+        }
+
+        public IRAM CreateRAM()
+        {
+            return new SODIMM();
+        }
+
+        public IStorage CreateStorage()
+        {
+            return new mSATA();
+        }
     }
 }

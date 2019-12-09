@@ -4,9 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ComputerShop.ComputerShop
+namespace ComputerShop
 {
-    interface iCompterFactory
+    public interface IRAM
     {
+        string getDescription();
+        void setCapactiy(int capacity);
     }
 }

@@ -6,7 +6,13 @@ using System.Threading.Tasks;
 
 namespace ComputerShop
 {
-    class Class1
+    public class Desktop : IComputer
     {
+        public string getDescription()
+        {
+            return "New Inspiration Dell Desktop \n" +
+                    "* 8th Generation Intel® Core™ i7-8565U Processor \n" +
+                    "* Windows 10 Home";
+        }
     }
 }

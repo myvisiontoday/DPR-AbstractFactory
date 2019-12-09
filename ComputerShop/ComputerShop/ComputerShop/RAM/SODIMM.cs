@@ -6,7 +6,17 @@ using System.Threading.Tasks;
 
 namespace ComputerShop
 {
-    class Class1
+    public class SODIMM : IRAM
     {
+        private int capacity = 4; // default value
+        public string getDescription()
+        {
+            return "* " + this.capacity + "GB LPDDR3 2133MHz DIMM";
+        }
+
+        public void setCapactiy(int capacity)
+        {
+            this.capacity = capacity;
+        }
     }
 }
