@@ -46,6 +46,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ComputerShop\interfaces\iCompterFactory.cs" />
+    <Compile Include="ComputerShop\interfaces\IComputer.cs" />
+    <Compile Include="ComputerShop\interfaces\IRAM.cs" />
+    <Compile Include="ComputerShop\Storage\mSATA.cs" />
+    <Compile Include="ComputerShop\Storage\SATA.cs" />
+    <Compile Include="ComputerShop\RAM\DIMM.cs" />
+    <Compile Include="ComputerShop\Computer\Desktop.cs" />
+    <Compile Include="ComputerShop\Computer\Laptop.cs" />
+    <Compile Include="ComputerShop\RAM\SODIMM.cs" />
+    <Compile Include="ComputerShop\DesktopFactory.cs" />
+    <Compile Include="ComputerShop\LaptopFactory.cs" />
+    <Compile Include="ComputerShop\Shop.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -54,6 +66,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
