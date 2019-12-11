@@ -14,6 +14,11 @@ namespace ComputerShop
             return "* " + this.capacity + "TB Hard Drive NVMe SATA";
         }
 
+        public decimal getPrice()
+        {
+            return 50;
+        }
+
         public void setCapactiy(int capacity)
         {
             this.capacity = capacity;

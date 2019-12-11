@@ -14,6 +14,11 @@ namespace ComputerShop
             return "* " + this.capacity + "GB SSD M.2 PCIe NVMe mSATA";
         }
 
+        public decimal getPrice()
+        {
+            return 150;
+        }
+
         public void setCapactiy(int capacity)
         {
             this.capacity = capacity;

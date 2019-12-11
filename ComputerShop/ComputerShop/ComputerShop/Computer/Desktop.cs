@@ -14,5 +14,10 @@ namespace ComputerShop
                     "* 8th Generation Intel® Core™ i7-8565U Processor \n" +
                     "* Windows 10 Home";
         }
+
+        public decimal getPrice()
+        {
+            return 299;
+        }
     }
 }

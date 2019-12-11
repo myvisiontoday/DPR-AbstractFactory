@@ -19,10 +19,12 @@ namespace ComputerShop
             IComputer computer = factory.CreateComputer();
             IRAM RAM = factory.CreateRAM();
             IStorage storage = factory.CreateStorage();
+            decimal totalPrice = computer.getPrice() + RAM.getPrice() + storage.getPrice();
 
             return "Your " + computer.getDescription() +
-                "/n " + RAM.getDescription() +
-                "/n " + storage.getDescription();
+                "\n" + RAM.getDescription() +
+                "\n" + storage.getDescription() +
+                "\n* Price: " + totalPrice + ",-";
         }
     }
 }

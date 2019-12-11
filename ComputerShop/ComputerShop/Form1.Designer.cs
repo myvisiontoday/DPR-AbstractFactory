@@ -33,17 +33,21 @@
             this.radiobtnLaptop = new System.Windows.Forms.RadioButton();
             this.radiobtnDesktop = new System.Windows.Forms.RadioButton();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.dUpDnSODIMM = new System.Windows.Forms.DomainUpDown();
-            this.dUpDnDIMM = new System.Windows.Forms.DomainUpDown();
             this.radiobtnSODIMM = new System.Windows.Forms.RadioButton();
             this.radiobtnDIMM = new System.Windows.Forms.RadioButton();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.dUpDneSATA = new System.Windows.Forms.DomainUpDown();
-            this.dUpDnSATA = new System.Windows.Forms.DomainUpDown();
             this.radiobtneSATA = new System.Windows.Forms.RadioButton();
             this.radiobtnSATA = new System.Windows.Forms.RadioButton();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.dUpDnSATA = new System.Windows.Forms.DomainUpDown();
+            this.dUpDneSATA = new System.Windows.Forms.DomainUpDown();
+            this.dUpDnSODIMM = new System.Windows.Forms.DomainUpDown();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.dUpDnDIMM = new System.Windows.Forms.DomainUpDown();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -97,8 +101,10 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.dUpDnSODIMM);
             this.groupBox2.Controls.Add(this.dUpDnDIMM);
+            this.groupBox2.Controls.Add(this.label3);
+            this.groupBox2.Controls.Add(this.label2);
+            this.groupBox2.Controls.Add(this.dUpDnSODIMM);
             this.groupBox2.Controls.Add(this.radiobtnSODIMM);
             this.groupBox2.Controls.Add(this.radiobtnDIMM);
             this.groupBox2.Location = new System.Drawing.Point(969, 253);
@@ -107,22 +113,6 @@
             this.groupBox2.TabIndex = 9;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Please select the RAM";
-            // 
-            // dUpDnSODIMM
-            // 
-            this.dUpDnSODIMM.Location = new System.Drawing.Point(306, 123);
-            this.dUpDnSODIMM.Name = "dUpDnSODIMM";
-            this.dUpDnSODIMM.Size = new System.Drawing.Size(120, 31);
-            this.dUpDnSODIMM.TabIndex = 12;
-            this.dUpDnSODIMM.Text = "select";
-            // 
-            // dUpDnDIMM
-            // 
-            this.dUpDnDIMM.Location = new System.Drawing.Point(28, 123);
-            this.dUpDnDIMM.Name = "dUpDnDIMM";
-            this.dUpDnDIMM.Size = new System.Drawing.Size(120, 31);
-            this.dUpDnDIMM.TabIndex = 11;
-            this.dUpDnDIMM.Text = "select";
             // 
             // radiobtnSODIMM
             // 
@@ -148,6 +138,8 @@
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.label5);
+            this.groupBox3.Controls.Add(this.label4);
             this.groupBox3.Controls.Add(this.dUpDneSATA);
             this.groupBox3.Controls.Add(this.dUpDnSATA);
             this.groupBox3.Controls.Add(this.radiobtneSATA);
@@ -158,28 +150,6 @@
             this.groupBox3.TabIndex = 9;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Select the storage";
-            // 
-            // dUpDneSATA
-            // 
-            this.dUpDneSATA.Items.Add("250 GB");
-            this.dUpDneSATA.Items.Add("500 GB");
-            this.dUpDneSATA.Items.Add("1 TB");
-            this.dUpDneSATA.Location = new System.Drawing.Point(306, 119);
-            this.dUpDneSATA.Name = "dUpDneSATA";
-            this.dUpDneSATA.Size = new System.Drawing.Size(120, 31);
-            this.dUpDneSATA.TabIndex = 13;
-            this.dUpDneSATA.Text = "select";
-            // 
-            // dUpDnSATA
-            // 
-            this.dUpDnSATA.Items.Add("1 TB");
-            this.dUpDnSATA.Items.Add("2 TB");
-            this.dUpDnSATA.Items.Add("3 TB");
-            this.dUpDnSATA.Location = new System.Drawing.Point(28, 119);
-            this.dUpDnSATA.Name = "dUpDnSATA";
-            this.dUpDnSATA.Size = new System.Drawing.Size(120, 31);
-            this.dUpDnSATA.TabIndex = 12;
-            this.dUpDnSATA.Text = "select";
             // 
             // radiobtneSATA
             // 
@@ -217,11 +187,97 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(133, 95);
+            this.label1.Location = new System.Drawing.Point(6, 95);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(406, 31);
             this.label1.TabIndex = 0;
             this.label1.Text = "Your Computer device details:";
+            // 
+            // dUpDnSATA
+            // 
+            this.dUpDnSATA.Items.Add("1");
+            this.dUpDnSATA.Items.Add("2");
+            this.dUpDnSATA.Items.Add("3");
+            this.dUpDnSATA.Items.Add("4");
+            this.dUpDnSATA.Location = new System.Drawing.Point(28, 119);
+            this.dUpDnSATA.Name = "dUpDnSATA";
+            this.dUpDnSATA.Size = new System.Drawing.Size(120, 31);
+            this.dUpDnSATA.TabIndex = 12;
+            this.dUpDnSATA.Text = "select";
+            // 
+            // dUpDneSATA
+            // 
+            this.dUpDneSATA.Items.Add("1");
+            this.dUpDneSATA.Items.Add("2");
+            this.dUpDneSATA.Location = new System.Drawing.Point(278, 119);
+            this.dUpDneSATA.Name = "dUpDneSATA";
+            this.dUpDneSATA.Size = new System.Drawing.Size(120, 31);
+            this.dUpDneSATA.TabIndex = 13;
+            this.dUpDneSATA.Text = "select";
+            // 
+            // dUpDnSODIMM
+            // 
+            this.dUpDnSODIMM.Items.Add("4");
+            this.dUpDnSODIMM.Items.Add("8");
+            this.dUpDnSODIMM.Items.Add("16");
+            this.dUpDnSODIMM.Items.Add("32");
+            this.dUpDnSODIMM.Location = new System.Drawing.Point(278, 125);
+            this.dUpDnSODIMM.Name = "dUpDnSODIMM";
+            this.dUpDnSODIMM.Size = new System.Drawing.Size(120, 31);
+            this.dUpDnSODIMM.TabIndex = 12;
+            this.dUpDnSODIMM.Text = "select";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(154, 127);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(46, 26);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "GB";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(403, 130);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(46, 26);
+            this.label3.TabIndex = 13;
+            this.label3.Text = "GB";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(402, 125);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(41, 26);
+            this.label4.TabIndex = 14;
+            this.label4.Text = "TB";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(154, 124);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(41, 26);
+            this.label5.TabIndex = 15;
+            this.label5.Text = "TB";
+            // 
+            // dUpDnDIMM
+            // 
+            this.dUpDnDIMM.Items.Add("4");
+            this.dUpDnDIMM.Items.Add("8");
+            this.dUpDnDIMM.Items.Add("16");
+            this.dUpDnDIMM.Items.Add("32");
+            this.dUpDnDIMM.Location = new System.Drawing.Point(28, 125);
+            this.dUpDnDIMM.Name = "dUpDnDIMM";
+            this.dUpDnDIMM.Size = new System.Drawing.Size(120, 31);
+            this.dUpDnDIMM.TabIndex = 14;
+            this.dUpDnDIMM.Text = "select";
             // 
             // Form1
             // 
@@ -259,12 +315,16 @@
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.RadioButton radiobtneSATA;
         private System.Windows.Forms.RadioButton radiobtnSATA;
-        private System.Windows.Forms.DomainUpDown dUpDnSODIMM;
-        private System.Windows.Forms.DomainUpDown dUpDnDIMM;
-        private System.Windows.Forms.DomainUpDown dUpDneSATA;
-        private System.Windows.Forms.DomainUpDown dUpDnSATA;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.DomainUpDown dUpDnSODIMM;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.DomainUpDown dUpDneSATA;
+        private System.Windows.Forms.DomainUpDown dUpDnSATA;
+        private System.Windows.Forms.DomainUpDown dUpDnDIMM;
     }
 }
 

@@ -21,9 +21,20 @@ namespace ComputerShop
 
         private void button1_Click(object sender, EventArgs e)
         {
-            iComputerFactory factory = new LaptopFactory();
-            shop = new Shop(factory);
-            label1.Text= shop.CreateAndDisplay();
+            if (radiobtnDesktop.Checked)
+            {
+                iComputerFactory factory = new DesktopFactory();
+                shop = new Shop(factory);
+                label1.Text = shop.CreateAndDisplay();
+            }
+            else if (radiobtnLaptop.Checked)
+            {
+                iComputerFactory factory = new LaptopFactory();
+                shop = new Shop(factory);
+                label1.Text = shop.CreateAndDisplay();
+            }
+            else
+                MessageBox.Show("Please select the device you want.");
         }
 
         private void radiobtnDesktop_CheckedChanged(object sender, EventArgs e)

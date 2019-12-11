@@ -9,5 +9,6 @@ namespace ComputerShop
     public interface IComputer
     {
         string getDescription();
+        decimal getPrice();
     }
 }

@@ -4,5 +4,7 @@
     {
         string getDescription();
         void setCapactiy(int capacity);
+
+        decimal getPrice();
     }
 }

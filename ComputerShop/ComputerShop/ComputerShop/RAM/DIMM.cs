@@ -14,6 +14,11 @@ namespace ComputerShop
             return "* "+this.capacity + "GB LPDDR3 2133MHz DIMM";
         }
 
+        public decimal getPrice()
+        {
+            return 50;
+        }
+
         public void setCapactiy(int capacity)
         {
             this.capacity = capacity;
